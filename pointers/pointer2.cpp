@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
+void update1(int &n)
+{
+    n++;
+}
 
+void update(int n){
+    n++;
+}
 int main()
 {
     // int num = 5;
@@ -25,12 +32,16 @@ int main()
     // int *p=0; // pointer to int is created and pointing to some garbage address
     // cout<< *p <<endl;
 
-    int i=5;
-    int *p=0;
-    p=&i;
+    // int i=5;
+    // int *p=0;
+    // p=&i;
 
-    cout<< p <<endl;
-    cout<< *p <<endl;
+    // cout<< p <<endl;
+    // cout<< *p <<endl;
+    int n=5;
+    cout<< "before" << n <<endl;
+    update1(n);
+    cout<< "After" <<n <<endl;
 
     return 0;
 }
