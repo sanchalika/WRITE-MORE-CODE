@@ -10,13 +10,14 @@ int main()
     {
         cin >> arr[i];
     }
+    
     for (int i = 0; i < n; i++)
     {
         int sum = 0;
         for (int k = i; k < n; k++)
         {
             sum += arr[k];
-            if (sum == k)
+            if (sum == x)
                 res++;
         }
     }
