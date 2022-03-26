@@ -11,7 +11,11 @@ int main()
         cin >> A >> B >> C >> D;
         int a = (A + D) / 2;
         int b = (A - D) / 2;
-        if ((a - b) == A && (a * b) == B && (a / b) == C && (a + b) == D)
+        A=(a-b);
+        B=(a*b);
+        C=a/b;
+        D=(a+b);
+        if ((a * b) == B && (a / b) == C)
         {
             cout << a << " " << b << endl;
         }
