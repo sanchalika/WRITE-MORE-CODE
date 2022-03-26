@@ -10,25 +10,8 @@ int main()
         int n;
         int pos = 0;
         cin >> n;
-        // if (pos >= 0)
-        // {
-        //     pos -= n;
-        // }
-        // else
-        // {
-        //     pos += n;
-        // }
-        for (int i = 1; i < n; i++)
-        {
-            if (i % 2 == 0)
-            {
-                pos = n / 2;
-            }
-            else
-            {
-                pos = (-n / 3);
-            }
-        }
-        cout << pos << endl;
+        int ans = (n + 1) / 2;
+        cout << ((n & 1) ? -ans : ans) << "\n";
     }
+    return 0;
 }
